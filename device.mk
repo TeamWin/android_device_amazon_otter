@@ -31,6 +31,8 @@ endif
 PRODUCT_AAPT_CONFIG := normal mdpi
 PRODUCT_AAPT_PREF_CONFIG := mdpi
 
+PRODUCT_COPY_FILES += \
+    $(DEVICE_FOLDER)/kernel:kernel
 
 # Hardware HALs
 PRODUCT_PACKAGES += \
@@ -41,13 +43,13 @@ PRODUCT_PACKAGES += \
     audio.a2dp.default \
 
 # Wifi
-PRODUCT_PACKAGES += \
-    dhcpcd.conf \
-    wpa_supplicant.conf \
-    calibrator \
-    crda \
-    regulatory.bin \
-    lib_driver_cmd_wl12xx \
+#PRODUCT_PACKAGES += \
+#    dhcpcd.conf \
+#    wpa_supplicant.conf \
+#    calibrator \
+#    crda \
+#    regulatory.bin \
+#    lib_driver_cmd_wl12xx \
 
 # Misc
 PRODUCT_PACKAGES += \

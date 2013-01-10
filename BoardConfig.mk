@@ -47,8 +47,8 @@ BOARD_SDCARD_DEVICE_PRIMARY := /dev/block/platform/omap/omap_hsmmc.1/by-name/med
 BOARD_SDCARD_DEVICE_INTERNAL := /dev/block/platform/omap/omap_hsmmc.1/by-name/media
 
 # Kernel Build
-TARGET_KERNEL_SOURCE := kernel/amazon/otter
-TARGET_KERNEL_CONFIG := otter_android_defconfig
+#TARGET_KERNEL_SOURCE := kernel/amazon/otter
+#TARGET_KERNEL_CONFIG := otter_android_defconfig
 TARGET_PREBUILT_KERNEL := device/amazon/otter/kernel
 
 WLAN_MODULES:
@@ -164,3 +164,9 @@ TARGET_KRAIT_BIONIC_PLDSIZE := 64
 # Bootanimation
 TARGET_BOOTANIMATION_PRELOAD := true
 
+#TWRP
+DEVICE_RESOLUTION := 1024x600
+BOARD_HAS_NO_REAL_SDCARD := true
+RECOVERY_TOUCHSCREEN_FLIP_Y := true
+RECOVERY_TOUCHSCREEN_SWAP_XY := true
+TARGET_RECOVERY_INITRC := device/amazon/otter/init.recovery.rc
