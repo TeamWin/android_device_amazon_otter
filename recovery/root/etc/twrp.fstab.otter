@@ -1,3 +1,4 @@
+# otter layout
 # mount point  fstype  device                                                  flags
 
 /sdcard        vfat    /dev/block/mmcblk0p12

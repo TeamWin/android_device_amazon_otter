@@ -49,3 +49,8 @@ BOARD_ALWAYS_INSECURE := true
 
 # Enable dalvik startup with a low memory footprint
 TARGET_ARCH_LOWMEM := true
+
+# Vendor Init
+TARGET_UNIFIED_DEVICE := true
+TARGET_INIT_VENDOR_LIB := libinit_otter
+TARGET_LIBINIT_DEFINES_FILE := device/amazon/otter/recovery/init/init_otter.c
